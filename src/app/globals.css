@@ -28,3 +28,6 @@ body {
 .center-element {
   @apply min-h-screen flex flex-col justify-center items-center
 }
+.inputForm {
+  @apply border border-b-blue-950 p-1  rounded-sm
+}

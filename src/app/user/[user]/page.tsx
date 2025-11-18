@@ -6,7 +6,7 @@ const UserPage = async ({
     params: Promise<{user: string}>
 }) => {
     const {user} = await params
-    console.log("Hello: ",user)
+    console.log("Hello user: ",user)
   return (
     <div className="center-element">
         <h1>Welcome, {user}</h1>

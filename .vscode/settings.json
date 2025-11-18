@@ -1,4 +1,15 @@
 {
-    "css.lint.unknownAtRules": "ignore",
-    "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "editor.fontSize": 12.5,
+  "terminal.integrated.fontSize": 12,
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.formatOnType": true,
+  "editor.lineHeight": 2,
+  "editor.overtypeCursorStyle": "block",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "underline"
 }
