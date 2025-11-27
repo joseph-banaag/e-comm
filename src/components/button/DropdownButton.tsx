@@ -1,5 +1,6 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { dropdownContent } from "@/components/constants/dropdown_items";
 
 const DropdownButton = () => {
   return (
@@ -18,66 +19,141 @@ const DropdownButton = () => {
       >
         <div className="py-1">
           <MenuItem>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
-            >
-              Edit
-            </a>
+            <span className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white">
+              {dropdownContent.processor}
+            </span>
           </MenuItem>
           <MenuItem>
-            <a
-              href="#"
+            <span
               className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
             >
-              Duplicate
-            </a>
-          </MenuItem>
-        </div>
-        <div className="py-1">
-          <MenuItem>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
-            >
-              Archive
-            </a>
+              {dropdownContent.motherboard}
+            </span>
           </MenuItem>
           <MenuItem>
-            <a
-              href="#"
+            <span
               className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
             >
-              Move
-            </a>
-          </MenuItem>
-        </div>
-        <div className="py-1">
-          <MenuItem>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
-            >
-              Share
-            </a>
+              {dropdownContent.memory}
+            </span>
           </MenuItem>
           <MenuItem>
-            <a
-              href="#"
+            <span
               className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
             >
-              Add to favorites
-            </a>
+              {dropdownContent.storage}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.gpu}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.psu}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.computerCase}
+            </span>
           </MenuItem>
         </div>
         <div className="py-1">
           <MenuItem>
-            <a
-              href="#"
+            <span
               className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
             >
-              Delete
-            </a>
+              {dropdownContent.caseFans}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.cpuCoolerAir}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.cpuCoolerAio}
+            </span>
+          </MenuItem>
+        </div>
+        <div className="py-1">
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.keyboard}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.mouse}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.mousePad}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.headset}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.audio}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.monitor}
+            </span>
+          </MenuItem>
+        </div>
+        <div className="py-1">
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.cables}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.networking}
+            </span>
+          </MenuItem>
+          <MenuItem>
+            <span
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+            >
+              {dropdownContent.monitorArm}
+            </span>
           </MenuItem>
         </div>
       </MenuItems>
