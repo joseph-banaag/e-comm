@@ -15,6 +15,7 @@ const HomePage = () => {
             This is the design of the main page...
           </Link>
         </section>
+        <Link href="/items">Items</Link>
       </div>
 
       <Footer />
