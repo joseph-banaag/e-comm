@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import DropdownButton from "@/components/button/DropdownButton";
 import Banner from "./Banner";
 
 const Navbar = () => {
@@ -29,9 +28,6 @@ const Navbar = () => {
           </div>
           <div className="basis-[20%] px-2 border">
             <ul className="flex flex-row-reverse gap-x-5 items-center">
-              <li>
-                <DropdownButton />
-              </li>
               <li>profile</li>
               <li>cart</li>
             </ul>

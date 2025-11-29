@@ -11,5 +11,6 @@
   "editor.lineHeight": 2,
   "editor.overtypeCursorStyle": "block",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorStyle": "underline"
+  "editor.cursorStyle": "underline",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
