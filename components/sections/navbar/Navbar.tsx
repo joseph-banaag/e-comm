@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Search } from "lucide-react";
+import styles from "./nav.module.css";
 
 const Navbar = () => {
   return (
-    <nav className="h-20 w-full flex justify-center items-center text-[10px] font-medium">
+    <nav className="w-full flex justify-center items-center text-[10px] font-medium py-3 mb-3">
       <div className="w-full flex justify-between px-10">
-        <Link href="/" className="ps-10">
+        <Link href="/public" className="ps-10 pe-3">
           <Image
             src="/logo/company-logo.svg"
             width={120}
@@ -15,57 +17,56 @@ const Navbar = () => {
           />
         </Link>
         <ul className="flex justify-between items-center gap-3">
-          <li className="flex items-center border border-gray-700/50 rounded-2xl shadow-md w-60 px-2 py-[2px]">
+          <li className="navBtnStyle w-30 h-[21px] md:w-60">
             <span className="w-40 text-gray-600/50">
-              {/*  add form here... */}
+              {/* todo:  add form here... */}
             </span>
-            <button className="flex items-center gap-1 cursor-pointer">
-              <span>Search</span>
-              <Image
-                src="/icons/search-icon.svg"
-                width={19}
-                height={19}
-                alt="Search"
-              />
+            <button className="block md:flex items-center gap-1 cursor-pointer">
+              <span className="hidden md:inline">Search</span>
+
+              <Search className={styles.icons} />
             </button>
           </li>
           <li>
-            <Link href="/" className="nav-btn-style">
+            <Link href="/" className="navBtnStyle">
               <span>
                 <Image
                   src="/icons/cart-add.svg"
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={15}
                   alt="add to cart"
+                  className="w-4 h-4"
                 />
               </span>
-              <span>Cart</span>
+              <span className="hidden md:inline">Cart</span>
             </Link>
           </li>
           <li>
-            <Link href="/" className="nav-btn-style">
+            <Link href="/" className="navBtnStyle">
               <span>
                 <Image
                   src="/icons/favorite.svg"
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={15}
                   alt="favorite"
+                  className="w-4 h-4"
                 />
               </span>
-              <span>Favorite</span>
+              <span className="hidden md:inline">Favorite</span>
             </Link>
           </li>
           <li>
-            <Link href="/" className="nav-btn-style">
+            <Link href="/" className="navBtnStyle">
               <span>
                 <Image
                   src="/icons/profile.svg"
-                  width={18}
-                  height={18}
+                  width={15}
+                  height={15}
                   alt="profile"
+                  className="w-4 h-4"
                 />
               </span>
-              <span>Profile</span>
+              <span className="hidden md:inline">Profile</span>
             </Link>
           </li>
         </ul>

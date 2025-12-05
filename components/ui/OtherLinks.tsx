@@ -17,7 +17,7 @@ const OtherLinks = () => {
         </button>
       </CollapsibleTrigger>
 
-      <CollapsibleContent className="absolute top-28 left-0 right-0">
+      <CollapsibleContent className="absolute top-[85px] left-0 right-0">
         <div className="h-40 w-full px-5 py-1 bg-gray-100">
           <p>Other components that you need. Here...</p>
         </div>

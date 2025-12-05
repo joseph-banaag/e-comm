@@ -1,0 +1,7 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "css.lint.unknownAtRules": "ignore",
+  "scss.validate": false,
+  "css.validate": false,
+  "editor.wordWrap": "on"
+}
