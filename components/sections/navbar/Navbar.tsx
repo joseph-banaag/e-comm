@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Search } from "lucide-react";
+import { Search, ShoppingCart, Heart, CircleUserRound } from "lucide-react";
 import styles from "./nav.module.css";
 
 const Navbar = () => {
@@ -30,13 +30,7 @@ const Navbar = () => {
           <li>
             <Link href="/" className="navBtnStyle">
               <span>
-                <Image
-                  src="/icons/cart-add.svg"
-                  width={15}
-                  height={15}
-                  alt="add to cart"
-                  className="w-4 h-4"
-                />
+                <ShoppingCart className={styles.icons} />
               </span>
               <span className="hidden md:inline">Cart</span>
             </Link>
@@ -44,13 +38,7 @@ const Navbar = () => {
           <li>
             <Link href="/" className="navBtnStyle">
               <span>
-                <Image
-                  src="/icons/favorite.svg"
-                  width={15}
-                  height={15}
-                  alt="favorite"
-                  className="w-4 h-4"
-                />
+                <Heart className={styles.icons} />
               </span>
               <span className="hidden md:inline">Favorite</span>
             </Link>
@@ -58,13 +46,7 @@ const Navbar = () => {
           <li>
             <Link href="/" className="navBtnStyle">
               <span>
-                <Image
-                  src="/icons/profile.svg"
-                  width={15}
-                  height={15}
-                  alt="profile"
-                  className="w-4 h-4"
-                />
+                <CircleUserRound className={styles.icons} />
               </span>
               <span className="hidden md:inline">Profile</span>
             </Link>
