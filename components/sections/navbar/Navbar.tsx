@@ -7,8 +7,8 @@ import NavSearchBtn from "@/components/ui/button/NavSearchBtn";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-center items-center text-xs font-medium py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-[#F84872] text-gray-100">
-      <div className="w-full flex justify-between px-2 md:px-10">
+    <nav className="w-full h-auto md:min-h-16 flex justify-center items-center text-xs font-medium py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-[#F84872] text-gray-100">
+      <div className="w-full flex justify-between px-3 md:px-10">
         <div className="flex gap-3">
           <Link href="/">
             <Image
@@ -27,12 +27,12 @@ const Navbar = () => {
               alt="Company logo"
               style={{ width: "auto", height: "auto" }}
               loading="eager"
-              className="hidden md:inline pr-5"
+              className="hidden md:inline pr-3 md:pr-5"
             />
           </Link>
         </div>
-        <ul className="flex justify-between items-center gap-1 md:gap-3">
-          <li className="flex justify-end items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-3 py-0.5 h-[21px] w-40 md:w-60">
+        <ul className="flex justify-between items-center gap-1 sm:gap-2 md:gap-3">
+          <li className="flex justify-end items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-1.5 md:px-3 py-0.5 h-[21px] w-35 md:w-50 lg:w-60">
             <span className="w-full text-gray-600/50">
               <NavSearchBtn />
             </span>

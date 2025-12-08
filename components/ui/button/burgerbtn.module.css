@@ -19,6 +19,17 @@
   width: max-content;
   cursor: pointer;
 }
+#hamburgerMenu::before {
+  background-color: #FAC402;
+}
+
+#hamburgerMenu::after {
+  background-color: #348AF6;
+}
+
+#hamburgerMenu input {
+  background-color: #02E3B6;
+}
 
 #hamburgerMenu::before,
 #hamburgerMenu::after,
@@ -26,7 +37,7 @@
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--foreground);
+  /* background-color: var(--foreground); */
   border-radius: 999px;
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing),

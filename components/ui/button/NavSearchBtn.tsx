@@ -17,7 +17,7 @@ const NavSearchBtn = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="flex gap-1"
       >
-        <input type="text" {...register("searchKeyword", { required: true })} className="w-full h-3.5 px-1.5 focus:outline-gray-700/10" />
+        <input type="text" {...register("searchKeyword", { required: true })} className="w-full h-3.5 px-px mt-px focus:outline-none text-gray-100" />
         <button
           type="submit"
           className="flex items-center gap-1 cursor-pointer "
