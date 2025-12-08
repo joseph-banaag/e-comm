@@ -1,9 +1,30 @@
-import React from "react";
+"use client";
+import { useForm, SubmitHandler } from "react-hook-form";
+import styles from "./burgerbtn.module.css";
+import { Search } from "lucide-react";
 
+interface FormValue {
+  searchKeyword: string;
+}
 const NavSearchBtn = () => {
+  const { register, handleSubmit } = useForm<FormValue>();
+
+  const onSubmit: SubmitHandler<FormValue> = (data) => console.log(data);
+
   return (
     <div>
-      <h1>This is where the navbar search button will be created...</h1>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex gap-1"
+      >
+        <input type="text" {...register("searchKeyword", { required: true })} className="w-full h-3.5 px-1.5 focus:outline-gray-700/10" />
+        <button
+          type="submit"
+          className="flex items-center gap-1 cursor-pointer "
+        >
+          <Search className={styles.icons} />
+        </button>
+      </form>
     </div>
   );
 };

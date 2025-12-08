@@ -1,0 +1,7 @@
+#otherLinksContent {
+    border: 2px solid gray;
+    border-radius: 16px;
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+}

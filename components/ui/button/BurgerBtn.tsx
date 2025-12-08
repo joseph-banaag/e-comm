@@ -14,7 +14,7 @@ const BurgerBtn = () => {
 
   return (
     <>
-      <label htmlFor="hamburger-menu" className={styles.hamburgerMenu}>
+      <label htmlFor="hamburger-menu" id={styles.hamburgerMenu} className="shadow-lg">
         <input type="checkbox" id="hamburger-menu" onClick={handleChecked} />
       </label>
       <SideNavbar isActive={checked} />

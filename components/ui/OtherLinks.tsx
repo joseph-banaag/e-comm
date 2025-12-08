@@ -5,6 +5,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import OtherLinksContent from "./OtherLinksContent";
 
 const OtherLinks = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -18,8 +19,8 @@ const OtherLinks = () => {
       </CollapsibleTrigger>
 
       <CollapsibleContent className="absolute top-[110px] left-0 right-0">
-        <div className="h-40 w-full px-5 py-1 bg-gray-100">
-          <p>Other components that you need. Here...</p>
+        <div className="h-40 w-full px-5 py-1 bg-gray-800 text-xs text-[#bec1c4]">
+          <OtherLinksContent />
         </div>
       </CollapsibleContent>
     </Collapsible>
