@@ -1,10 +1,21 @@
-
-.icons {
-    width: 12px;
-    height: 12px;
-    color: gray;
+:root {
+  --background-dark: #1e2939;
+  --foreground-color: #4a4c4f;
+  --foreground-light: #bec1c4;
+  --border-color: #b9babb;
 }
 
-.sideNavLinks{
-    transition: opacity 200ms ease-in-out;
+.icons {
+  width: 12px;
+  height: 12px;
+  color: var(--foreground-light);
+}
+
+.sideNavBarStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--foreground-light);
+  padding: 4px 8px;
+  line-height: 1.5;
 }

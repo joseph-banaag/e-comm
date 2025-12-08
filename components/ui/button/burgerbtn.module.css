@@ -1,7 +1,7 @@
 :root {
-  --bar-width: 25px;
+  --bar-width: 20px;
   --bar-height: 3px;
-  --hamburger-gap: 5px;
+  --hamburger-gap: 3px;
   --foreground: #99a1af;
   --animation-timing: 200ms ease-in-out;
 }
@@ -39,11 +39,11 @@
 }
 .hamburgerMenu:has(input:checked)::before {
   rotate: 45deg;
-  translate: 2px -1px;
+  translate: 3px -1px;
 }
 .hamburgerMenu:has(input:checked)::after {
   rotate: -45deg;
-  translate: 2px 0px;
+  translate: 3px 1px;
 }
 
 .hamburgerMenu input:checked {
