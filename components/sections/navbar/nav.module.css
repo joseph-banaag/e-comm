@@ -4,3 +4,7 @@
     height: 12px;
     color: gray;
 }
+
+.sideNavLinks{
+    transition: opacity 200ms ease-in-out;
+}
