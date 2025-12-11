@@ -1,5 +1,5 @@
 import {storeLinks} from "@/components/constant/storeLinks";
-import OtherLinks from "@/components/ui/OtherLinks";
+import CollapsibleLinkContents from "@/components/ui/CollapsibleLinkContents";
 
 const NavSubMenu = () => {
   return (
@@ -28,7 +28,7 @@ const NavSubMenu = () => {
           {storeLinks.computer_case}
         </li>
         <li className="subNavBtn">
-          <OtherLinks/>
+          <CollapsibleLinkContents/>
         </li>
       </ul>
     </div>

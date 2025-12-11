@@ -1,5 +1,5 @@
 "use client";
-import SideNavbar from "@/components/sections/navbar/SideNavbar";
+import HamburgerMenu from "@/components/sections/navbar/HamburgerMenu";
 import styles from "./navBtn.module.css";
 import {useState} from "react";
 
@@ -30,7 +30,7 @@ const BurgerBtn = () => {
                onChange={handleChecked}
         />
       </label>
-      <SideNavbar isActive={checked}/>
+      <HamburgerMenu isActive={checked}/>
     </div>
   );
 };
