@@ -1,7 +1,7 @@
 import styles from "./nav.module.css";
 import {storeLinks} from "@/components/constant/storeLinks";
 
-const SideNavbar = ({isActive}: { isActive: boolean }) => {
+const HamburgerMenu = ({isActive}: { isActive: boolean }) => {
   
   return (
     <nav
@@ -34,4 +34,4 @@ const SideNavbar = ({isActive}: { isActive: boolean }) => {
   );
 };
 
-export default SideNavbar;
+export default HamburgerMenu;
