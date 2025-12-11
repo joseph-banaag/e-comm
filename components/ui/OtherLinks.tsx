@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Collapsible,
   CollapsibleContent,
@@ -9,6 +9,12 @@ import OtherLinksContent from "./OtherLinksContent";
 
 const OtherLinks = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  
+  useEffect(() => {
+    
+  })
+
 
   return (
     <Collapsible open={isOpen} onOpenChange={setIsOpen} className="static">
