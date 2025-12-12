@@ -16,9 +16,9 @@ const CollapsibleLinkContents = () => {
   return (
     <div>
       <div
-        className={`${isOpen ? "block" : "hidden"} w-full h-full absolute top-0 right-0 left-0 backdrop-blur-[2px]`}
+        className={`${isOpen ? "fixed" : "hidden"} w-full p-0 m-0 h-screen absolute top-0 right-0 left-0 backdrop-blur-[2px] bg-gray-800/50`}
         onClick={handleClose}/>
-      <button onClick={handleOpen}>
+      <button onClick={handleOpen} className="cursor-pointer">
         Other
       </button>
       <ul

@@ -18,7 +18,7 @@ const BurgerBtn = () => {
   return (
     <div>
       <div
-        className={`${checked ? "block" : "hidden"} absolute top-0 left-0 right-0 w-full h-full`}
+        className={`${checked ? "fixed" : "hidden"} absolute top-0 left-0 right-0 w-full h-screen p-0 m-0 backdrop-blur-[2px] bg-gray-800/50`}
         onClick={overlayClick}/>
       <label
         htmlFor="hamburger-menu"

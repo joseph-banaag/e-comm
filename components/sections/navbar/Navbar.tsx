@@ -8,7 +8,7 @@ import NavSearchBtn from "@/components/ui/button/NavSearchBtn";
 const Navbar = () => {
   return (
     <nav
-      className="w-full h-auto md:min-h-16 flex justify-center items-center text-xs font-medium py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-purple-950 text-gray-100">
+      className="w-full h-auto md:min-h-16 flex justify-center items-center text-xs font-medium px-1 py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-purple-950 text-gray-100">
       <div className="w-full flex justify-between px-3">
         <div className="flex gap-3 ps-3">
           <Link href="/">
