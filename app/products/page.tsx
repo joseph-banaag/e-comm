@@ -5,6 +5,7 @@ const ProductsPage = () => {
     <div>
       <h1>Welcome to the products page...</h1>
       <p>For all your product needs</p>
+      <span>This is a test changes from the local file...</span>
     </div>
   );
 };
