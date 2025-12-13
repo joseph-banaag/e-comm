@@ -1,7 +1,8 @@
 "use client";
-import HamburgerMenu from "@/components/sections/navbar/HamburgerMenu";
 import styles from "./navBtn.module.css";
 import {useState} from "react";
+import {storeLinks} from "@/components/constant/storeLinks";
+
 
 const BurgerBtn = () => {
   const [checked, setChecked] = useState<boolean>(false);
@@ -30,7 +31,33 @@ const BurgerBtn = () => {
                onChange={handleChecked}
         />
       </label>
-      <HamburgerMenu isActive={checked}/>
+      <nav
+        className={`absolute flex top-12 right-0 min-w-[40%] w-48 bg-gray-800 rounded-lg border border-gray-100 mr-1 sm:mr-2 shadow-xl text-sm ${
+          checked ? "block" : "hidden"
+        }`}
+      >
+        <ul className={styles.sideNavBarStyle}>
+          <li onClick={overlayClick}>{storeLinks.motherboard}</li>
+          <li onClick={overlayClick}>{storeLinks.processor}</li>
+          <li onClick={overlayClick}>{storeLinks.memory}</li>
+          <li onClick={overlayClick}>{storeLinks.storage}</li>
+          <li onClick={overlayClick}>{storeLinks.gpu}</li>
+          <li onClick={overlayClick}>{storeLinks.psu}</li>
+          <li onClick={overlayClick}>{storeLinks.computer_case}</li>
+          <li onClick={overlayClick}>{storeLinks.case_fans}</li>
+          <li onClick={overlayClick}>{storeLinks.cpu_cooler_air}</li>
+          <li onClick={overlayClick}>{storeLinks.cpu_cooler_aio}</li>
+          <li onClick={overlayClick}>{storeLinks.cable}</li>
+          <li onClick={overlayClick}>{storeLinks.networking}</li>
+          <li onClick={overlayClick}>{storeLinks.keyboard}</li>
+          <li onClick={overlayClick}>{storeLinks.mouse}</li>
+          <li onClick={overlayClick}>{storeLinks.mouse_pad}</li>
+          <li onClick={overlayClick}>{storeLinks.headset}</li>
+          <li onClick={overlayClick}>{storeLinks.audio}</li>
+          <li onClick={overlayClick}>{storeLinks.monitor}</li>
+          <li onClick={overlayClick}>{storeLinks.monitor_arm}</li>
+        </ul>
+      </nav>
     </div>
   );
 };

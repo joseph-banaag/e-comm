@@ -40,7 +40,7 @@ const Navbar = () => {
             </span>
           </li>
           <li>
-            <Link href="/" className="navBtnStyle">
+            <Link href="/cart" className="navBtnStyle">
               <span>
                 <ShoppingCart className={styles.icons}/>
               </span>
@@ -48,15 +48,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/" className="navBtnStyle">
+            <Link href="/favorites" className="navBtnStyle">
               <span>
                 <Heart className={styles.icons}/>
               </span>
-              <span className="hidden md:inline">Favorite</span>
+              <span className="hidden md:inline">Favorites</span>
             </Link>
           </li>
           <li>
-            <Link href="/" className="navBtnStyle">
+            <Link href="/profile" className="navBtnStyle">
               <span>
                 <CircleUserRound className={styles.icons}/>
               </span>

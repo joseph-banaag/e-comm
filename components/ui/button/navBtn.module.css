@@ -56,3 +56,12 @@
   height: 12px;
   color: #FAC402;
 }
+
+.sideNavBarStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--foreground-light);
+  padding: 14px 12px;
+  line-height: 1.5;
+}
