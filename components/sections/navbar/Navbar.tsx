@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <ul className="flex justify-between items-center gap-1 sm:gap-2 md:gap-3">
           <li
-            className="flex justify-end items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-1.5 md:px-3 py-0.5 h-[21px] w-35 md:w-50 lg:w-60">
+            className="flex justify-end items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-1.5 md:px-3 py-0.5 h-5.25 w-35 md:w-50 lg:w-60">
             <span className="w-full text-gray-600/50">
               <NavSearchBtn/>
             </span>
