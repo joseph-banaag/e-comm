@@ -1,6 +1,8 @@
 import React from 'react';
 
 const ProfilePage = () => {
+  
+  // todo: if use is not signed in, redirect to sign in page.
   return (
     <div className="w-full h-screen">
       <h1>Welcome User!</h1>

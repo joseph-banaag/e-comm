@@ -32,7 +32,7 @@ const BurgerBtn = () => {
         />
       </label>
       <nav
-        className={`absolute flex top-12 right-0 min-w-[40%] w-48 bg-gray-800 rounded-lg border border-gray-100 mr-1 sm:mr-2 shadow-xl text-sm ${
+        className={`absolute flex top-12 right-0 min-w-[40%] w-48 bg-gray-800 rounded-lg border border-gray-200/50 mr-1 sm:mr-2 shadow-xl text-sm ${
           checked ? "block" : "hidden"
         }`}
       >
