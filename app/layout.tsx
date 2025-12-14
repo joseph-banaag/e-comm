@@ -32,7 +32,9 @@ export default function RootLayout({
     >
     <Navbar/>
     <NavSubMenu/>
-    {children}
+    <div className="p-5">
+      {children}
+    </div>
     </body>
     </html>
   );

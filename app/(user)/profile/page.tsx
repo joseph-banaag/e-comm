@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProfilePage = () => {
   return (
-    <div>
+    <div className="w-full h-screen">
       <h1>Welcome User!</h1>
       <p>This is you profile page...</p>
     </div>

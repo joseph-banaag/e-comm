@@ -40,6 +40,10 @@ const Navbar = () => {
             </span>
           </li>
           <li>
+            {/*todo:
+                    if the user is logged in, change the content of the cart from local to user's
+                     profile/database...
+            */}
             <Link href="/cart" className="navBtnStyle">
               <span>
                 <ShoppingCart className={styles.icons}/>
@@ -48,6 +52,10 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            {/*todo:
+                  if the user is logged in, change the favorites from save to local to save to user's
+                   profile/database...
+            */}
             <Link href="/favorites" className="navBtnStyle">
               <span>
                 <Heart className={styles.icons}/>
@@ -56,6 +64,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            {/*todo:
+                  if use is logged in, change this link to be in the users dashboard/profile...
+            */}
             <Link href="/profile" className="navBtnStyle">
               <span>
                 <CircleUserRound className={styles.icons}/>
