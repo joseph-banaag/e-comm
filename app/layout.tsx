@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import Navbar from "@/components/sections/navbar/Navbar";
 import NavSubMenu from "@/components/sections/navbar/NavSubMenu";
+import BottomNav from "@/components/sections/navbar/BottomNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
     <div className="p-5">
       {children}
     </div>
+    <BottomNav />
     </body>
     </html>
   );

@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav
       className="w-full h-auto md:min-h-16 flex justify-center items-center text-xs font-medium px-1 py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-purple-950 text-gray-100">
       <div className="w-full flex justify-between px-3">
-        <div className="flex gap-3 ps-3">
+        <div className="flex gap-3 px-3 ">
           <Link href="/">
             <Image
               src="/logo/company-logo-small.svg"
@@ -32,9 +32,9 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="flex justify-between items-center gap-1 sm:gap-2 md:gap-3">
+        <ul className="flex justify-between items-center gap-0.5 sm:gap-2 md:gap-3">
           <li
-            className="flex justify-end items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-1.5 md:px-3 py-0.5 h-5.25 w-35 md:w-50 lg:w-60">
+            className="flex justify-end items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-1.5 md:px-3 py-0.5 h-5.25 w-auto xs:w-50 md:w-60">
             <span className="w-full text-gray-600/50">
               <NavSearchBtn/>
             </span>
@@ -44,7 +44,7 @@ const Navbar = () => {
                     if the user is logged in, change the content of the cart from local to user's
                      profile/database...
             */}
-            <Link href="/cart" className="navBtnStyle">
+            <Link href="/cart" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-2 py-0.5">
               <span>
                 <ShoppingCart className={styles.icons}/>
               </span>
@@ -56,7 +56,7 @@ const Navbar = () => {
                   if the user is logged in, change the favorites from save to local to save to user's
                    profile/database...
             */}
-            <Link href="/favorites" className="navBtnStyle">
+            <Link href="/favorites" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-2 py-0.5">
               <span>
                 <Heart className={styles.icons}/>
               </span>
@@ -67,7 +67,7 @@ const Navbar = () => {
             {/*todo:
                   if use is logged in, change this link to be in the users dashboard/profile...
             */}
-            <Link href="/profile" className="navBtnStyle">
+            <Link href="/profile" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-2 py-0.5">
               <span>
                 <CircleUserRound className={styles.icons}/>
               </span>
