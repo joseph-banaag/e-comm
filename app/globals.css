@@ -1,40 +1,63 @@
 @import "tailwindcss";
 
 :root {
-    --background-color: #e4e4e6;
-    --foreground: #232324;
+  --background-color: #e4e4e6;
+  --foreground: #232324;
 }
 
 @theme {
-    --breakpoint-xs: 30rem;
-    @keyframes bounce-once {
-        0% {
-            transform: translateY(0);
-            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-            animation-play-state: running;
-        }
-        50% {
-            transform: translateY(-25%);
-            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-            animation-play-state: paused;
-        }
-        100% {
-            transform: translateY(0);
-            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-            animation-play-state: running;
-        }
+  --breakpoint-xs: 30rem;
+  
+  @keyframes bounce-once {
+    0% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      animation-play-state: running;
     }
-    --animate-bounce-nav: bounce-once 2s ease-in-out;
+    50% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      animation-play-state: paused;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      animation-play-state: running;
+    }
+  }
+  
+  --animate-bounce-nav: bounce-once 2s;
+  
+  @keyframes bounce-reverse {
+    0% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      animation-play-state: running;
+    }
+    50% {
+      transform: translateY(25%);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      animation-play-state: paused;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      animation-play-state: running;
+    }
+  }
+  
+  --animate-bounce-close: bounce-reverse 2s;
+  
 }
 
 .sub-nav-links-style {
-    @apply border border-gray-700/50 rounded-4xl shadow-md px-2 py-1 bg-white;
+  @apply border border-gray-700/50 rounded-4xl shadow-md px-2 py-1 bg-white;
 }
 
 .nav-btn-style {
-    @apply flex items-center gap-1 cursor-pointer border border-gray-700/50 rounded-2xl shadow-md px-3 py-0.5;
+  @apply flex items-center gap-1 cursor-pointer border border-gray-700/50 rounded-2xl shadow-md px-3 py-0.5;
 }
 
 .subNavBtn {
-    @apply border border-gray-200 rounded-4xl shadow-md px-2 py-0.5 bg-white;
+  @apply border border-gray-200 rounded-4xl shadow-md px-2 py-0.5 bg-white;
 }
