@@ -48,6 +48,36 @@
   
   --animate-bounce-close: bounce-reverse 2s;
   
+  @keyframes drawer-open {
+    0% {
+      transform: translateY(100%);
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 1;
+    }
+  }
+  
+  --animate-drawer-open: drawer-open 0.4s;
+  
+  @keyframes drawer-close {
+    0% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100%);
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 1;
+    }
+  }
+  
+  --animate-drawer-close: drawer-close 0.4s;
+  
 }
 
 .sub-nav-links-style {

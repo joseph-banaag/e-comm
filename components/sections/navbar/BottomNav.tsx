@@ -1,9 +1,12 @@
 "use client";
 import React from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
+import styles from "./nav.module.css";
+import Link from "next/link";
 
 const BottomNav = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  
   const handleDrawerOpen = () => {
     setIsOpen(!isOpen);
   };
@@ -17,10 +20,26 @@ const BottomNav = () => {
         <ChevronDown
           type="button"
           onClick={handleDrawerClose}
-          className={`${isOpen ? "block" : "hidden"} animate-bounce-close shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce`}
+          className={`${isOpen ? "block" : "hidden"} animate-bounce-close shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce mb-1`}
         />
-        <div className={`${isOpen ? "flex" : "hidden"}`}>
-          content here...
+        <div
+          className={`${isOpen ? "flex animate-drawer-open" : "hidden animate-drawer-close"} animate-drawer-open w-full border border-gray-700/20 rounded-t-2xl pt-2 pb-4 px-5 backdrop-blur-[2px]`}>
+          <ul className="flex justify-between items-center w-full px-5 text-xs ">
+            <li><Link
+              href="/"
+              className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-700/50 shadow-lg">
+              Home
+            </Link></li>
+            <li><Link href="/"
+                      className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-700/50 shadow-lg">On
+              Sale</Link></li>
+            <li><Link href="/cart"
+                      className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-700/50 shadow-lg">Cart</Link>
+            </li>
+            <li><Link href="/Profile"
+                      className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-700/50 shadow-lg">Home</Link>
+            </li>
+          </ul>
         </div>
       </div>
       

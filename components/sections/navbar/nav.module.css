@@ -1,12 +1,12 @@
 :root {
-    --background-dark: #1e2939;
-    --foreground-color: #4a4c4f;
-    --foreground-light: #f3f4f6;
-    --border-color: #b9babb;
+  --background-dark: #1e2939;
+  --foreground-color: #4a4c4f;
+  --foreground-light: #f3f4f6;
+  --border-color: #b9babb;
 }
 
 .icons {
-    width: 12px;
-    height: 12px;
-    color: var(--foreground-light);
+  width: 12px;
+  height: 12px;
+  color: var(--foreground-light);
 }
