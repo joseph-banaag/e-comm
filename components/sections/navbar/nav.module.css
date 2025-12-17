@@ -1,12 +1,11 @@
+@reference "tailwindcss"
 :root {
   --background-dark: #1e2939;
-  --foreground-color: #4a4c4f;
-  --foreground-light: #f3f4f6;
+  --foreground-dark: #19191a;
+  --foreground-light: #e1e1e3;
   --border-color: #b9babb;
 }
 
 .icons {
-  width: 12px;
-  height: 12px;
-  color: var(--foreground-light);
+  @apply  w-3 h-3 outline-(--foreground-light);
 }

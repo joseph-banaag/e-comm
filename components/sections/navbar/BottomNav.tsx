@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
-import styles from "./nav.module.css";
 import Link from "next/link";
 
 const BottomNav = () => {
@@ -20,24 +19,31 @@ const BottomNav = () => {
         <ChevronDown
           type="button"
           onClick={handleDrawerClose}
-          className={`${isOpen ? "block" : "hidden"} animate-bounce-close shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce mb-1`}
+          className={`${isOpen ? "block" : "hidden"} transition-all duration-200 text-gray-800 hover:text-red-500 animate-bounce-close shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce mb-1 drop-shadow-lg`}
         />
         <div
-          className={`${isOpen ? "flex animate-drawer-open" : "hidden animate-drawer-close"} animate-drawer-open w-full border border-gray-700/20 rounded-t-2xl pt-2 pb-4 px-5 backdrop-blur-[2px]`}>
-          <ul className="flex justify-between items-center w-full px-5 text-xs ">
+          className={`${isOpen ? "flex animate-drawer-open" : "hidden animate-drawer-close"} animate-drawer-open w-full border border-gray-200/50 rounded-t-lg pt-2 pb-3 px-5 backdrop-blur-[2px] bg-gray-800`}>
+          <ul className="flex justify-between items-center w-full px-5 text-xs text-gray-100">
             <li><Link
               href="/"
-              className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-700/50 shadow-lg">
+              className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-500/40 shadow-lg transition-all duration-300 hover:bg-gray-400 hover:text-[#19191a] text-shadow-lg">
               Home
             </Link></li>
-            <li><Link href="/"
-                      className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-700/50 shadow-lg">On
-              Sale</Link></li>
-            <li><Link href="/cart"
-                      className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-700/50 shadow-lg">Cart</Link>
+            <li>
+              <Link href="/"
+                    className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-500/40 shadow-lg transition-all duration-300 hover:bg-gray-400 hover:text-[#19191a] text-shadow-lg">On Sale</Link>
             </li>
-            <li><Link href="/Profile"
-                      className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-700/50 shadow-lg">Home</Link>
+            <li>
+              <Link href="/cart"
+                    className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-500/40 shadow-lg transition-all duration-300 hover:bg-gray-400 hover:text-[#19191a] text-shadow-lg">Cart</Link>
+            </li>
+            <li>
+              <Link href="/favorites"
+                    className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-500/40 shadow-lg transition-all duration-300 hover:bg-gray-400 hover:text-[#19191a] text-shadow-lg">Favorite</Link>
+            </li>
+            <li>
+              <Link href="/profile"
+                    className="border flex items-center rounded-2xl px-2 py-0.5 border-gray-500/40 shadow-lg transition-all duration-300 hover:bg-gray-400 hover:text-[#19191a] text-shadow-lg">Profile</Link>
             </li>
           </ul>
         </div>
@@ -46,7 +52,7 @@ const BottomNav = () => {
       <ChevronUp
         type="button"
         onClick={handleDrawerOpen}
-        className={`${isOpen ? "hidden" : "block"} animate-bounce-nav shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce mb-2`}
+        className={`${isOpen ? "hidden" : "block"} text-gray-800 hover:text-green-500 animate-bounce-nav shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce mb-2 drop-shadow-lg`}
       />
       
       {/*  todo:

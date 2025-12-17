@@ -4,7 +4,7 @@ import CollapsibleLinkContents from "@/components/ui/CollapsibleLinkContents";
 const NavSubMenu = () => {
   return (
     <div
-      className="min-w-dvw h-auto hidden md:flex flex-1 items-center text-xs font-medium px-2 lg:px-5 pb-3 shadow-md">
+      className="min-w-full h-auto hidden md:flex flex-1 items-center text-xs font-medium px-2 lg:px-5 pb-3 shadow-md">
       <ul className="flex items-center gap-2 lg:gap-5">
         <li className="subNavBtn">
           {storeLinks.processor}

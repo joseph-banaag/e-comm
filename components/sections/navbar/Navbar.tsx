@@ -8,7 +8,7 @@ import NavSearchBtn from "@/components/ui/button/NavSearchBtn";
 const Navbar = () => {
   return (
     <nav
-      className="w-full h-auto md:min-h-16 flex justify-center items-center text-xs font-medium px-1 py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-purple-950 text-gray-100">
+      className="w-full h-auto md:min-h-16 flex justify-center items-center text-xs font-medium px-1 py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-purple-950 text-[#e1e1e3]">
       <div className="w-full flex justify-between px-3">
         <div className="flex gap-3 px-3 ">
           <Link href="/">
@@ -34,8 +34,8 @@ const Navbar = () => {
         </div>
         <ul className="flex justify-between items-center gap-0.5 sm:gap-2 md:gap-3">
           <li
-            className="flex justify-end items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-1.5 md:px-3 py-0.5 h-5.25 w-auto xs:w-50 md:w-60">
-            <span className="w-full text-gray-600/50">
+            className="flex justify-end items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-1.5 md:px-3 py-0.5 h-5.25 w-auto xs:w-50 md:w-60 shadow-lg">
+            <span className="w-full text-[#e1e1e3]">
               <NavSearchBtn/>
             </span>
           </li>
@@ -44,7 +44,7 @@ const Navbar = () => {
                     if the user is logged in, change the content of the cart from local to user's
                      profile/database...
             */}
-            <Link href="/cart" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-2 py-0.5">
+            <Link href="/cart" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 shadow-lg">
               <span>
                 <ShoppingCart className={styles.icons}/>
               </span>
@@ -56,7 +56,7 @@ const Navbar = () => {
                   if the user is logged in, change the favorites from save to local to save to user's
                    profile/database...
             */}
-            <Link href="/favorites" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-2 py-0.5">
+            <Link href="/favorites" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl px-2 py-0.5 shadow-lg">
               <span>
                 <Heart className={styles.icons}/>
               </span>
@@ -67,7 +67,7 @@ const Navbar = () => {
             {/*todo:
                   if use is logged in, change this link to be in the users dashboard/profile...
             */}
-            <Link href="/profile" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-100 rounded-2xl shadow-md px-2 py-0.5">
+            <Link href="/profile" className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 shadow-lg">
               <span>
                 <CircleUserRound className={styles.icons}/>
               </span>

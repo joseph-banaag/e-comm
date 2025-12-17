@@ -33,7 +33,7 @@ export default function RootLayout({
     >
     <Navbar/>
     <NavSubMenu/>
-    <div className="p-5">
+    <div className="p-1 md:p-5">
       {children}
     </div>
     <BottomNav />

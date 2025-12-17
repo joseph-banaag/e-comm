@@ -5,6 +5,11 @@
   --foreground: #232324;
 }
 
+html,
+body {
+  width: 100%;
+}
+
 @theme {
   --breakpoint-xs: 30rem;
   
@@ -89,5 +94,5 @@
 }
 
 .subNavBtn {
-  @apply border border-gray-200 rounded-4xl shadow-md px-2 py-0.5 bg-white;
+  @apply border border-gray-200 rounded-4xl shadow-md px-2 py-0.5 bg-white text-[#19191a];
 }

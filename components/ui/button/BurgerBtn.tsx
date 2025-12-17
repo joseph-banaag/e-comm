@@ -37,7 +37,7 @@ const BurgerBtn = () => {
         }`}
       >
         <ul className={styles.sideNavBarStyle}>
-          <li onClick={overlayClick}>{storeLinks.motherboard}</li>
+          <li onClick={overlayClick} className="hover:underline ">{storeLinks.motherboard}</li>
           <li onClick={overlayClick}>{storeLinks.processor}</li>
           <li onClick={overlayClick}>{storeLinks.memory}</li>
           <li onClick={overlayClick}>{storeLinks.storage}</li>
