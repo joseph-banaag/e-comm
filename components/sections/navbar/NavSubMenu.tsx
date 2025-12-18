@@ -1,36 +1,25 @@
-import {storeLinks} from "@/components/constant/storeLinks";
 import CollapsibleLinkContents from "@/components/ui/CollapsibleLinkContents";
+import {subNavLinks} from "@/components/constant/storeLinks";
+import Link from "next/link";
 
 const NavSubMenu = () => {
   return (
     <div
       className="min-w-full h-auto hidden md:flex flex-1 items-center text-xs font-medium px-2 lg:px-5 pb-3 shadow-md">
-      <ul className="flex items-center gap-2 lg:gap-5">
-        <li className="subNavBtn">
-          {storeLinks.processor}
-        </li>
-        <li className="subNavBtn">
-          {storeLinks.monitor}
-        </li>
-        <li className="subNavBtn">
-          {storeLinks.memory}
-        </li>
-        <li className="subNavBtn">
-          {storeLinks.storage}
-        </li>
-        <li className="subNavBtn">
-          {storeLinks.gpu}
-        </li>
-        <li className="subNavBtn">
-          {storeLinks.psu}
-        </li>
-        <li className="subNavBtn">
-          {storeLinks.computer_case}
-        </li>
-        <li className="subNavBtn">
+      <div className="flex items-center gap-2 lg:gap-5">
+        {subNavLinks.map((link) => (
+          <Link
+            key={link.label}
+            href={link.route}
+            className="border border-gray-200 rounded-4xl px-2 py-0.5 bg-white text-[#19191a] transition-all duration-300 hover:bg-gray-700/70 hover:text-[#e2e4e8] text-shadow-lg shadow-lg"
+          >
+            {link.label}
+          </Link>
+        ))}
+        <div className="border border-gray-200 rounded-4xl px-2 py-0.5 bg-white text-[#19191a] transition-all duration-300 hover:bg-gray-700/70 hover:text-[#e2e4e8] text-shadow-lg shadow-lg">
           <CollapsibleLinkContents/>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 "use client";
 import styles from "./navBtn.module.css";
 import {useState} from "react";
-import {storeLinks} from "@/components/constant/storeLinks";
+import {storeLinksList} from "@/components/constant/storeLinks";
+import Link from "next/link";
 
 
 const BurgerBtn = () => {
@@ -13,7 +14,7 @@ const BurgerBtn = () => {
   
   const overlayClick = () => {
     handleChecked();
-  }
+  };
   
   
   return (
@@ -32,31 +33,19 @@ const BurgerBtn = () => {
         />
       </label>
       <nav
-        className={`absolute flex top-12 right-0 min-w-[40%] w-48 bg-gray-800 rounded-lg border border-gray-200/50 mr-1 sm:mr-2 shadow-xl text-sm ${
+        className={`absolute flex top-12 right-0 min-w-[30%] w-48 bg-gray-800 rounded-lg border border-gray-200/50 mr-1 sm:mr-2 shadow-xl text-sm/6 text=[#e2e4e8] ${
           checked ? "block" : "hidden"
         }`}
       >
-        <ul className={styles.sideNavBarStyle}>
-          <li onClick={overlayClick} className="hover:underline ">{storeLinks.motherboard}</li>
-          <li onClick={overlayClick}>{storeLinks.processor}</li>
-          <li onClick={overlayClick}>{storeLinks.memory}</li>
-          <li onClick={overlayClick}>{storeLinks.storage}</li>
-          <li onClick={overlayClick}>{storeLinks.gpu}</li>
-          <li onClick={overlayClick}>{storeLinks.psu}</li>
-          <li onClick={overlayClick}>{storeLinks.computer_case}</li>
-          <li onClick={overlayClick}>{storeLinks.case_fans}</li>
-          <li onClick={overlayClick}>{storeLinks.cpu_cooler_air}</li>
-          <li onClick={overlayClick}>{storeLinks.cpu_cooler_aio}</li>
-          <li onClick={overlayClick}>{storeLinks.cable}</li>
-          <li onClick={overlayClick}>{storeLinks.networking}</li>
-          <li onClick={overlayClick}>{storeLinks.keyboard}</li>
-          <li onClick={overlayClick}>{storeLinks.mouse}</li>
-          <li onClick={overlayClick}>{storeLinks.mouse_pad}</li>
-          <li onClick={overlayClick}>{storeLinks.headset}</li>
-          <li onClick={overlayClick}>{storeLinks.audio}</li>
-          <li onClick={overlayClick}>{storeLinks.monitor}</li>
-          <li onClick={overlayClick}>{storeLinks.monitor_arm}</li>
-        </ul>
+        <div className="flex flex-col px-4 py-3">
+          {storeLinksList.map((link) => (
+            <Link
+              key={link.label}
+              href={link.route}>
+              {link.label}
+            </Link>
+          ))}
+        </div>
       </nav>
     </div>
   );
