@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {CircleUserRound, Heart, ShoppingCart} from "lucide-react";
+import {CircleUserRound, Heart, Percent, ShoppingCart} from "lucide-react";
 import styles from "./nav.module.css";
 import BurgerBtn from "@/components/ui/button/BurgerBtn";
 import NavSearchBtn from "@/components/ui/button/NavSearchBtn";
@@ -38,7 +38,7 @@ const Navbar = () => {
         <ul className="flex justify-between items-center gap-0.5 sm:gap-2 md:gap-3">
           <li
             className="flex justify-end items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-1.5 md:px-3 py-0.5 h-5.25 w-auto xs:w-50 md:w-60 shadow-lg transition-all duration-300 hover:ring-1 hover:ring-gray-200/70">
-            <span className="w-full text-[#e1e1e3] ">
+            <span className="w-full text-[#e1e1e3]">
               <NavSearchBtn/>
             </span>
           </li>
@@ -50,11 +50,22 @@ const Navbar = () => {
             */}
             <Link href="/cart"
                   className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
-              <span>
-                <ShoppingCart className={styles.icons}/>
-              </span>
+              <ShoppingCart className={styles.icons}/>
               <span className="hidden md:inline">Cart</span>
             </Link>
+          </li>
+          
+          <li className="md:hidden">
+            {/*todo:
+                  if the user is logged in, change the favorites from save to local to save to user's
+                   profile/database...
+            */}
+            <div className="hidden sm:flex">
+              <Link href="/on-sale"
+                    className="flex md:hidden items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
+                <Percent className={styles.icons}/>
+              </Link>
+            </div>
           </li>
           
           <li>
@@ -64,9 +75,7 @@ const Navbar = () => {
             */}
             <Link href="/favorites"
                   className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
-              <span>
-                <Heart className={styles.icons}/>
-              </span>
+              <Heart className={styles.icons}/>
               <span className="hidden md:inline">Favorites</span>
             </Link>
           </li>
@@ -77,13 +86,11 @@ const Navbar = () => {
             */}
             <Link href="/profile"
                   className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
-              <span>
-                <CircleUserRound className={styles.icons}/>
-              </span>
+              <CircleUserRound className={styles.icons}/>
               <span className="hidden md:inline">Profile</span>
             </Link>
           </li>
-          <li className="inline md:hidden">
+          <li className="inline md:hidden ">
             <BurgerBtn/>
           </li>
         </ul>

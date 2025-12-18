@@ -20,7 +20,7 @@ const BurgerBtn = () => {
   return (
     <div>
       <div
-        className={`${checked ? "fixed" : "hidden"} absolute top-0 left-0 right-0 w-full h-screen p-0 m-0 backdrop-blur-[2px] bg-gray-800/50`}
+        className={`${checked ? "fixed" : "hidden"} absolute top-0 left-0 right-0 bottom-0 w-full h-full p-0 m-0 backdrop-blur-[2px] bg-gray-800/50`}
         onClick={overlayClick}/>
       <label
         htmlFor="hamburger-menu"
@@ -41,7 +41,9 @@ const BurgerBtn = () => {
           {storeLinksList.map((link) => (
             <Link
               key={link.label}
-              href={link.route}>
+              href={link.route}
+              onClick={overlayClick}
+            >
               {link.label}
             </Link>
           ))}

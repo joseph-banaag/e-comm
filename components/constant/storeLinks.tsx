@@ -24,6 +24,10 @@ export const subNavLinks = [
     route: "/products/case",
     label: "Computer Case",
   },
+  {
+    route: "/on-sale",
+    label: "Sales",
+  }
 ]
 
 export const storeLinksList = [
@@ -153,4 +157,27 @@ export const collapsibleLinks = [
     route: "/products/monitor-arm",
     label: "Monitor Arm"
   },
+]
+
+export const bottomNavLinks = [
+  {
+    route: "/",
+    label: "Home"
+  },
+  {
+    route: "/on-sale",
+    label: "On Sale"
+  },
+  {
+    route: "/cart",
+    label: "Cart"
+  },
+  {
+    route: "/favorites",
+    label: "Favorites"
+  },
+  {
+    route: "/profile",
+    label: "Profile"
+  }
 ]
