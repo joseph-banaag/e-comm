@@ -3,7 +3,7 @@
   --bar-height: 2px;
   --hamburger-gap: 3px;
   --foreground-light: #e2e4e8;
-  --foreground: #99a1af;
+  --foreground: #bdc2c9;
   --animation-timing: 200ms ease-in-out;
 }
 
@@ -27,7 +27,7 @@
   width: var(--bar-width);
   height: var(--bar-height);
   border-radius: 999px;
-  background-color: var(--foreground-light);
+  background-color: var(--foreground);
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing),
     rotate var(--animation-timing), translate var(--animation-timing), background var(--animation-timing);
@@ -36,7 +36,7 @@
 #hamburgerMenu:hover::before,
 #hamburgerMenu:hover::after,
 #hamburgerMenu input:hover {
-  background-color: #99a1af;
+  background-color: var(--foreground-light);
 }
 
 #hamburgerMenu input {

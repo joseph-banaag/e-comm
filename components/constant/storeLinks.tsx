@@ -1,3 +1,4 @@
+import {CircleUserRound, Heart, HomeIcon, Percent, ShoppingCart} from "lucide-react";
 
 export const subNavLinks = [
   {
@@ -162,22 +163,27 @@ export const collapsibleLinks = [
 export const bottomNavLinks = [
   {
     route: "/",
-    label: "Home"
+    label: "Home",
+    icon: <HomeIcon className="size-4.75"/>,
   },
   {
     route: "/on-sale",
-    label: "On Sale"
+    label: "Sales",
+    icon: <Percent className="size-4.75"/>
   },
   {
     route: "/cart",
-    label: "Cart"
+    label: "Cart",
+    icon: <ShoppingCart className="size-4.75"/>
   },
   {
     route: "/favorites",
-    label: "Favorites"
+    label: "Favorites",
+    icon: <Heart className="size-4.75"/>
   },
   {
     route: "/profile",
-    label: "Profile"
+    label: "Profile",
+    icon: <CircleUserRound className="size-4.75"/>
   }
 ]
