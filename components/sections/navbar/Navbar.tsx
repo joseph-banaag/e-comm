@@ -4,6 +4,7 @@ import {CircleUserRound, Heart, Percent, ShoppingCart} from "lucide-react";
 import styles from "./nav.module.css";
 import BurgerBtn from "@/components/ui/button/BurgerBtn";
 import NavSearchBtn from "@/components/ui/button/NavSearchBtn";
+import Tooltip from "@/components/ui/tooltip";
 
 const Navbar = () => {
   return (
@@ -48,11 +49,15 @@ const Navbar = () => {
                     if the user is logged in, change the content of the cart from local to user's
                      profile/database...
             */}
-            <Link href="/cart"
-                  className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
-              <ShoppingCart className={styles.icons}/>
-              <span className="hidden md:inline">Cart</span>
-            </Link>
+            <Tooltip content="Cart" position="bottom">
+              
+              <Link href="/cart"
+                    className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
+                <ShoppingCart className={styles.icons}/>
+                <span className="hidden md:inline">Cart</span>
+              </Link>
+            
+            </Tooltip>
           </li>
           
           <li className="md:hidden">
@@ -61,10 +66,14 @@ const Navbar = () => {
                    profile/database...
             */}
             <div className="hidden sm:flex">
-              <Link href="/on-sale"
-                    className="flex md:hidden items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
-                <Percent className={styles.icons}/>
-              </Link>
+              <Tooltip content="Sale" position="bottom">
+                
+                <Link href="/on-sale"
+                      className="flex md:hidden items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
+                  <Percent className={styles.icons}/>
+                </Link>
+              
+              </Tooltip>
             </div>
           </li>
           
@@ -73,22 +82,30 @@ const Navbar = () => {
                   if the user is logged in, change the favorites from save to local to save to user's
                    profile/database...
             */}
-            <Link href="/favorites"
-                  className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
-              <Heart className={styles.icons}/>
-              <span className="hidden md:inline">Favorites</span>
-            </Link>
+            <Tooltip content="Favorite" position="bottom">
+              
+              <Link href="/favorites"
+                    className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
+                <Heart className={styles.icons}/>
+                <span className="hidden md:inline">Favorites</span>
+              </Link>
+            
+            </Tooltip>
           </li>
           
           <li>
             {/*todo:
                   if use is logged in, change this link to be in the users dashboard/profile...
             */}
-            <Link href="/profile"
-                  className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
-              <CircleUserRound className={styles.icons}/>
-              <span className="hidden md:inline">Profile</span>
-            </Link>
+            <Tooltip content="Profile" position="bottom">
+              
+              <Link href="/profile"
+                    className="hidden sm:flex items-center gap-1 cursor-pointer border border-gray-400/50 rounded-2xl  px-2 py-0.5 transition-all duration-300 hover:bg-gray-200/60 hover:text-[#19191a] text-shadow-lg shadow-lg">
+                <CircleUserRound className={styles.icons}/>
+                <span className="hidden md:inline">Profile</span>
+              </Link>
+            
+            </Tooltip>
           </li>
           <li className="inline md:hidden ">
             <BurgerBtn/>

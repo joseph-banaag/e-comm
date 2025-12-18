@@ -30,7 +30,7 @@ const BottomNav = () => {
             <Link
               key={link.label}
               href={link.route}
-              className="flex flex-col gap-0.5 items-center px-2 py-0.5  shadow-lg transition-all duration-300 text-[#bdc2c9]  hover:text-[#e2e4e8] text-shadow-lg text-[10px]"
+              className="flex flex-col gap-0.5 items-center px-2 py-0.5 transition-all duration-300 text-[#bdc2c9] text-shadow-lg hover:text-[#e2e4e8] text-[10px] drop-shadow-lg"
             >
               {link.icon}
               {link.label}

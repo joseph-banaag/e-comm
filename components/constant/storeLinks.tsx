@@ -27,7 +27,7 @@ export const subNavLinks = [
   },
   {
     route: "/on-sale",
-    label: "Sales",
+    label: "Sale",
   }
 ]
 
@@ -168,7 +168,7 @@ export const bottomNavLinks = [
   },
   {
     route: "/on-sale",
-    label: "Sales",
+    label: "Sale",
     icon: <Percent className="size-4.75"/>
   },
   {
