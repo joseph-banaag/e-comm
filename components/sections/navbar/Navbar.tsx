@@ -4,7 +4,7 @@ import {CircleUserRound, Heart, Percent, ShoppingCart} from "lucide-react";
 import styles from "./nav.module.css";
 import BurgerBtn from "@/components/ui/button/BurgerBtn";
 import NavSearchBtn from "@/components/ui/button/NavSearchBtn";
-import Tooltip from "@/components/ui/tooltip";
+import Tooltip from "@/components/ui/Tooltip";
 
 const Navbar = () => {
   return (

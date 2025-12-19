@@ -19,11 +19,11 @@ const BottomNav = () => {
       <ChevronDown
         type="button"
         onClick={handleDrawerClose}
-        className={`${isOpen ? "block" : "hidden"} size-5.5 absolute bottom-[65px] transition-all duration-200 text-gray-800 hover:text-red-500 animate-bounce-close shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce drop-shadow-lg`}
+        className={`${isOpen ? "block" : "hidden"} size-5.5 absolute bottom-[55px] transition-all duration-200 text-red-700 animate-bounce-close shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce drop-shadow-lg`}
       />
       
       <div
-        className={`${isOpen ? "flex animate-drawer-open" : "hidden animate-drawer-close"} animate-drawer-open w-full border border-gray-200/50 rounded-t-lg pt-2 pb-3 px-1.5 sm:px-5 backdrop-blur-[2px] bg-gray-800 overflow-hidden`}>
+        className={`${isOpen ? "flex animate-drawer-open" : "hidden animate-drawer-close"} animate-drawer-open w-full border border-gray-200/50 rounded-t-lg pb-2 pt-1 px-4 backdrop-blur-[2px] bg-gray-800 overflow-hidden`}>
         
         <div className="flex justify-between items-center w-full px-5 text-gray-100 text-nowrap gap-1">
           {bottomNavLinks.map((link) => (
@@ -43,7 +43,7 @@ const BottomNav = () => {
       <ChevronUp
         type="button"
         onClick={handleDrawerOpen}
-        className={`${isOpen ? "hidden" : "block"} size-5.5 absolute bottom-[5px] text-gray-800 hover:text-green-500 animate-bounce-nav shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce drop-shadow-lg`}
+        className={`${isOpen ? "hidden" : "block"} size-5.5 absolute bottom-[5px] text-green-700 animate-bounce-nav shadow-sm border border-gray-500/30 rounded-xl cursor-pointer hover:bg-gray-100 hover:bg-opacity-75 hover:animate-bounce drop-shadow-lg`}
       />
     </div>
   );

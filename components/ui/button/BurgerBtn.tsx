@@ -43,6 +43,7 @@ const BurgerBtn = () => {
               key={link.label}
               href={link.route}
               onClick={overlayClick}
+              className="relative inline-block after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 hover:after:right-auto"
             >
               {link.label}
             </Link>

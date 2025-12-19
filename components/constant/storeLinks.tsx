@@ -164,26 +164,26 @@ export const bottomNavLinks = [
   {
     route: "/",
     label: "Home",
-    icon: <HomeIcon className="size-4.75"/>,
+    icon: <HomeIcon className="size-4"/>,
   },
   {
     route: "/on-sale",
     label: "Sale",
-    icon: <Percent className="size-4.75"/>
+    icon: <Percent className="size-4"/>
   },
   {
     route: "/cart",
     label: "Cart",
-    icon: <ShoppingCart className="size-4.75"/>
+    icon: <ShoppingCart className="size-4"/>
   },
   {
     route: "/favorites",
     label: "Favorites",
-    icon: <Heart className="size-4.75"/>
+    icon: <Heart className="size-4"/>
   },
   {
     route: "/profile",
     label: "Profile",
-    icon: <CircleUserRound className="size-4.75"/>
+    icon: <CircleUserRound className="size-4"/>
   }
 ]
