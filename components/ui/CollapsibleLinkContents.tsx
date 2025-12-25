@@ -16,13 +16,13 @@ const CollapsibleLinkContents = () => {
   return (
     <div>
       <div
-        className={`${isOpen ? "fixed" : "hidden"} w-full p-0 m-0 h-full absolute top-0 right-0 left-0 backdrop-blur-[2px] bg-gray-800/50`}
+        className={`${isOpen ? "fixed" : "hidden"} w-full p-0 m-0 h-full absolute top-0 right-0 left-0 backdrop-blur-[2px] bg-gray-800/70`}
         onClick={handleClose}/>
       <button onClick={handleOpen} className="cursor-pointer">
         Other
       </button>
       <div
-        className={`${isOpen ? "absolute" : "hidden"} flex flex-wrap px-4 pt-3 pb-7 gap-2  top-27.5 left-0 right-0 w-full h-30 bg-gray-800 text-[#e2e4e8]`}>
+        className={`${isOpen ? "absolute" : "hidden"} flex flex-wrap px-4 pt-3 pb-7 gap-2  top-27.5 left-0 right-0 w-full h-30 bg-gray-800/70 text-[#e2e4e8]`}>
         {collapsibleLinks.map((link)=> (
           <Link
             key={link.label}

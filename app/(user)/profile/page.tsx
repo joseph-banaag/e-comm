@@ -4,7 +4,7 @@ const ProfilePage = () => {
   
   // todo: if use is not signed in, redirect to sign in page.
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full max-w-7xl">
       <h1>Welcome User!</h1>
       <p>This is you profile page...</p>
     </div>

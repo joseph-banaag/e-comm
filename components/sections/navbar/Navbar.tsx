@@ -9,7 +9,7 @@ import Tooltip from "@/components/ui/Tooltip";
 const Navbar = () => {
   return (
     <nav
-      className="w-full h-auto md:min-h-16 flex justify-center items-center text-xs font-medium px-1 py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-purple-950 text-[#e1e1e3]">
+      className="w-full h-auto md:min-h-16 flex justify-center items-center text-xs font-medium px-1 py-3 mb-3 shadow-lg bg-linear-to-r from-blue-600 to-purple-950 text-[#e1e1e3] max-w-7xl">
       <div className="w-full flex justify-between px-3">
         
         <div className="flex gap-3 px-3 ">

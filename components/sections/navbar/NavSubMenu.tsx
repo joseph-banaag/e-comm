@@ -5,13 +5,13 @@ import Link from "next/link";
 const NavSubMenu = () => {
   return (
     <div
-      className="min-w-full h-auto hidden md:flex flex-1 items-center text-xs font-medium px-2 lg:px-5 pb-3 shadow-md">
-      <div className="flex items-center gap-2 lg:gap-5">
+      className="min-w-full h-auto hidden md:flex flex-1 items-center text-xs font-medium px-2 lg:px-5 pb-3 shadow-md max-w-7xl">
+      <div className="flex items-center gap-2 lg:gap-5 flex-wrap">
         {subNavLinks.map((link) => (
           <Link
             key={link.label}
             href={link.route}
-            className="border border-gray-200 rounded-4xl px-2 py-0.5 bg-white text-[#19191a] transition-all duration-300 hover:bg-gray-700/70 hover:text-[#e2e4e8] text-shadow-lg shadow-lg"
+            className="text-nowrap border border-gray-200 rounded-4xl px-2 py-0.5 bg-white text-[#19191a] transition-all duration-300 hover:bg-gray-700/70 hover:text-[#e2e4e8] text-shadow-lg shadow-lg"
           >
             {link.label}
           </Link>

@@ -3,11 +3,11 @@ import {CircleUserRound, Heart, HomeIcon, Percent, ShoppingCart} from "lucide-re
 export const subNavLinks = [
   {
     route: "/products/cpu",
-    label: "Processor",
+    label: "Processor (CPU)",
   },
   {
-    route: "/products/monitor",
-    label: "Monitor",
+    route: "/products/motherboard",
+    label: "Motherboard",
   },
   {
     route: "/products/ram",
@@ -22,8 +22,12 @@ export const subNavLinks = [
     label: "Power Supply (PSU)",
   },
   {
-    route: "/products/case",
-    label: "Computer Case",
+    route: "/products/storage",
+    label: "Storage",
+  },
+  {
+    route: "/products/pc-case",
+    label: "PC Case",
   },
   {
     route: "/on-sale",

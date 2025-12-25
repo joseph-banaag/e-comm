@@ -33,7 +33,7 @@ const BurgerBtn = () => {
         />
       </label>
       <nav
-        className={`absolute flex top-12 right-0 min-w-[30%] w-48 bg-gray-800 rounded-lg border border-gray-200/50 mr-1 sm:mr-2 shadow-xl text-sm/6 text=[#e2e4e8] ${
+        className={`absolute flex top-12 right-0 min-w-45 bg-gray-800/70 rounded-lg border border-gray-200/50 mr-1 sm:mr-2 shadow-xl text-sm/6 text=[#e2e4e8] ${
           checked ? "block" : "hidden"
         }`}
       >
@@ -43,7 +43,7 @@ const BurgerBtn = () => {
               key={link.label}
               href={link.route}
               onClick={overlayClick}
-              className="relative inline-block after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 hover:after:right-auto"
+              className="relative inline-block after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 hover:after:right-auto text-nowrap"
             >
               {link.label}
             </Link>
