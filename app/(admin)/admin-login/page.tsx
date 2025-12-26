@@ -1,11 +1,16 @@
 import React from 'react';
+import SignInPage from "@/components/constant/SignInPage";
 
 const AdminLoginPage = () => {
+  
+  const adminCredential = "/admin-signup"
+  /**
+   * todo:
+   *  pass props to the sign in page to change the link to went to admin for admin
+   */
+  
   return (
-    <div className="w-full h-full max-w-7xl">
-      <h1>Hello!</h1>
-      <p>Welcome to Admin login page...</p>
-    </div>
+    <SignInPage credential={adminCredential}/>
   );
 };
 
