@@ -8,7 +8,7 @@ const ProfilePage = () => {
   
   useEffect(() => {
     if (!isLoggedIn) {
-      router.push("/user-login");
+      router.push("/user-signin");
     } else {
       console.log("logged in?", isLoggedIn);
     }

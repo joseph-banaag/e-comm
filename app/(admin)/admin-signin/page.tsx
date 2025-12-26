@@ -1,17 +1,17 @@
 import React from 'react';
 import SignInPage from "@/components/constant/SignInPage";
 
-const AdminLoginPage = () => {
-  
+const Page = () => {
   const adminCredential = "/admin-signup"
-  /**
-   * todo:
-   *  pass props to the sign in page to change the link to went to admin for admin
-   */
   
+  /*
+  * todo:
+  *   create a different authentication for a newly created admin account before granting acess
+  * */
+
   return (
     <SignInPage credential={adminCredential}/>
   );
 };
 
-export default AdminLoginPage;
+export default Page;

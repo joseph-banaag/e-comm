@@ -3,12 +3,13 @@ import SignUpPage from "@/components/constant/SignUpPage";
 
 const Page = () => {
   
-  const adminCredential = "/admin-login"
+  const adminCredential = "/admin-signin"
   
-  /**
-   * todo:
-   *  pass props to the sign in page to change the link to went to admin for admin
-   */
+  /*
+* todo:
+*   create a different authentication for a newly created admin account before granting acess
+* */
+  
   return (
     <SignUpPage credential={adminCredential}/>
   );
