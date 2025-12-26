@@ -5,7 +5,7 @@ import Link from "next/link";
 const NavSubMenu = () => {
   return (
     <div
-      className="min-w-full h-auto hidden md:flex flex-1 items-center text-xs font-medium px-2 lg:px-5 pb-3 shadow-md max-w-7xl">
+      className="min-w-full h-auto hidden md:flex flex-1 items-center text-xs font-medium px-2 lg:px-5 pt-3 pb-6 shadow-md max-w-7xl bg-[#e4e4e6]">
       <div className="flex items-center gap-2 lg:gap-5 flex-wrap">
         {subNavLinks.map((link) => (
           <Link

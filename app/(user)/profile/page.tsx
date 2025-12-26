@@ -4,14 +4,13 @@ import {useRouter} from "next/navigation";
 
 const ProfilePage = () => {
   const router = useRouter();
-  const loggedIn = false;
+  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   
   useEffect(() => {
-    
-    if (!loggedIn) {
+    if (!isLoggedIn) {
       router.push("/user-login");
     } else {
-      console.log("logged in?", loggedIn);
+      console.log("logged in?", isLoggedIn);
     }
     
   });
