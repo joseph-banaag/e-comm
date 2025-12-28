@@ -1,6 +1,11 @@
 import React from "react";
 
 const OnSaleProducts = () => {
+  
+  /*
+  * todo:
+  *  display producs on sale here...
+  * */
   return (
     <div>
       <h1>

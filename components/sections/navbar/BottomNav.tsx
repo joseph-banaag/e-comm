@@ -23,7 +23,7 @@ const BottomNav = () => {
       />
       
       <div
-        className={`${isOpen ? "flex animate-drawer-open" : "hidden animate-drawer-close"} animate-drawer-open w-full border border-gray-200/50 rounded-t-lg pb-2 pt-1 px-4 backdrop-blur-[2px] bg-gray-800/70 overflow-hidden`}>
+        className={`${isOpen ? "flex animate-drawer-open" : "hidden animate-drawer-close"} animate-drawer-open w-full border border-gray-200/50 rounded-t-lg pb-2 pt-1 px-4 backdrop-blur-[2px] bg-gray-800/80 overflow-hidden z-9`}>
         
         <div className="flex justify-between items-center w-full px-5 text-gray-100 text-nowrap gap-1">
           {bottomNavLinks.map((link) => (

@@ -22,7 +22,7 @@ const CollapsibleLinkContents = () => {
         Other
       </button>
       <div
-        className={`${isOpen ? "absolute" : "hidden"} flex flex-wrap px-4 pt-3 pb-7 gap-2  top-27.5 left-0 right-0 w-full h-30 bg-gray-800/70 text-[#e2e4e8]`}>
+        className={`${isOpen ? "absolute" : "hidden"} flex flex-wrap px-4 pt-3 pb-7 gap-2  top-27.5 left-0 right-0 w-full h-30 bg-gray-800/80 text-[#e2e4e8] z-9`}>
         {collapsibleLinks.map((link)=> (
           <Link
             key={link.label}

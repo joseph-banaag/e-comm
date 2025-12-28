@@ -49,6 +49,7 @@ const SignUpPage = ({credential}: CredentialProps) => {
           </label>
           <input
             id="userName"
+            autoComplete="on"
             type="text"
             {...register("userName", {
               required: "Username is required",
@@ -136,6 +137,7 @@ const SignUpPage = ({credential}: CredentialProps) => {
           </label>
           <input
             id="email"
+            autoComplete="on"
             type="email"
             {...register("email", {
               required: "Email is required",

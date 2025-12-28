@@ -31,9 +31,6 @@ const UserLoginPage = ({credential}: CredentialProps) => {
     console.log(data);
   };
   
-  console.log(credential);
-  
-  
   return (
     <div className="w-full h-screen flex justify-center">
       <form
@@ -50,6 +47,7 @@ const UserLoginPage = ({credential}: CredentialProps) => {
           </label>
           <input
             id="userName"
+            autoComplete="on"
             type="text"
             {...register("userName", {
               required: "Username is required",

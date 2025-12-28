@@ -14,6 +14,9 @@ const ProductPage = async ({
       <h1>Welcome to your product.</h1>
       <p>The page for the product that you have selected</p>
       <p>{products}</p>
+      <p>
+        mindset ba.
+      </p>
     </div>
   );
 };
