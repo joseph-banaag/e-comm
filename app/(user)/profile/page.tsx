@@ -13,7 +13,10 @@ const ProfilePage = () => {
       console.log("logged in?", isLoggedIn);
     }
     
-  });
+  }, [
+    isLoggedIn,
+    router
+  ]);
   
   return (
     <div className="w-full h-full max-w-7xl">
