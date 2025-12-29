@@ -6,7 +6,7 @@ const ProductsLayout = ({
   children: React.ReactNode;
 }) => {
   return (
-      <div className="w-full h-full max-w-7xl">
+      <div className="w-full h-full">
       {children}
       </div>
   );

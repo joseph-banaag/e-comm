@@ -15,7 +15,7 @@ const BottomNav = () => {
     setIsOpen(false);
   };
   return (
-    <div className="fixed bottom-0 right-0 left-0 flex flex-col justify-center items-center min-w-2xs sm:hidden max-w-7xl">
+    <div className="fixed bottom-0 right-0 left-0 flex flex-col justify-center items-center min-w-2xs sm:hidden">
       <ChevronDown
         type="button"
         onClick={handleDrawerClose}
