@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-scroll-behaviour="smooth"
+      data-scroll-behavior="smooth"
     >
     <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-200`}
     >
     <Navbar/>
     <NavSubMenu/>
