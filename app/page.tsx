@@ -2,7 +2,7 @@ export default function Home() {
   
   /*
   * todo:
-  *  show some featured products here...
+  *  show some featured assets here...
   * */
   return (
     <main>
