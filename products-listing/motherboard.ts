@@ -39,7 +39,7 @@ export const motherboard = [
       
       // Main product description (customer-facing)
       headline: "Unleash AMD Ryzen™ 9000 Series Performance",
-      
+      q
       description: "ASUS Prime series motherboards are expertly engineered to unleash the full potential of AMD Ryzen™ 9000 series processors. The PRIME B850M-A WIFI-CSM motherboard provides users and PC DIY builders with a range of performance optimizations via intuitive software and firmware features. It's designed to be Advanced AI PC-ready, offering the power and connectivity needed for demanding AI applications.",
       
       // Key selling points (for bullet lists, feature highlights)
